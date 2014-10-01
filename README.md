@@ -1,6 +1,10 @@
+## IMPORTANT ##
+This version is for ACF Version 5 (free and pro) ONLY!    
+-----------
+
 === Advanced Custom Fields - Website field add-on ===
 
-Contributors: Jeradin, jmslbam, patrickhafner
+Contributors: Jeradin, jmslbam, patrickhafner   
 Tags: acf, acf add-on, website url, website title  
 Requires at least: 4.0   
 Tested up to: 3.3.1  
@@ -9,10 +13,6 @@ Stable tag: 4.3
 License: GPLv2 or later 
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html 
-
-## IMPORTANT ##
-This version is for ACF Version 5 (free and pro) ONLY!
-
 
 == Description ==
 Adds a Website Field to Advanced Custom Fields. Select if link should be an external link, if it should show title or the url.
