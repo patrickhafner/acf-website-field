@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Advanced Custom Fields: Website Field
+Plugin Name: Advanced Custom Fields: Website Field for ACF v5
 Plugin URI: https://github.com/Jeradin/acf-website-field
 GitHub Plugin URI: https://github.com/Jeradin/acf-website-field
 Description: Website Title field for Advanced Custom Fields
@@ -32,8 +32,8 @@ class acf_website_field_plugin
 	function __construct()
 	{
 
-		// version 4+
-		add_action('acf/register_fields', array($this, 'register_fields'));
+		// version 5+ ONLY!!!
+		add_action('acf/include_field_types', array($this, 'register_fields'));
 
 
 	}

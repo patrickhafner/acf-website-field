@@ -46,7 +46,7 @@ class Website_field extends acf_Field
 
 
 	/*
-	*  format_value_for_api()
+	*  format_value()
 	*
 	*  This filter is appied to the $value after it is loaded from the db and before it is passed back to the api functions such as the_field
 	*
@@ -61,7 +61,7 @@ class Website_field extends acf_Field
 	*/
 
 
-	function format_value_for_api(  $value, $post_id, $field )
+	function format_value(  $value, $post_id, $field )
 	{
 
 
@@ -124,7 +124,7 @@ class Website_field extends acf_Field
 
 
 	/*
-	*  create_field()
+	*  render_field()
 	*
 	*  Create the HTML interface for your field
 	*
@@ -138,7 +138,7 @@ class Website_field extends acf_Field
 
 
 
-	function create_field($field)
+	function render_field($field)
 	{
 
 
@@ -228,7 +228,7 @@ echo '<td><input type="text" value="' . $link_url . '" id="' . $field['name'] . 
 			<td>
 				<?php
 
-		do_action('acf/create_field', array(
+		do_action('acf/render_field', array(
 				'type' => 'radio',
 				'name' => 'fields['.$key.'][website_title]',
 				'value' => $field['website_title'],
@@ -252,7 +252,7 @@ echo '<td><input type="text" value="' . $link_url . '" id="' . $field['name'] . 
 			</td>
 			<td>
 				<?php
-		do_action('acf/create_field', array(
+		do_action('acf/render_field', array(
 				'type' => 'radio',
 				'name' => 'fields['.$key.'][internal_link]',
 				'value' => $field['internal_link'],
@@ -273,7 +273,7 @@ echo '<td><input type="text" value="' . $link_url . '" id="' . $field['name'] . 
 			</td>
 			<td>
 				<?php
-		do_action('acf/create_field', array(
+		do_action('acf/render_field', array(
 				'type' => 'radio',
 				'name' => 'fields['.$key.'][output_format]',
 				'value' => $field['output_format'],
