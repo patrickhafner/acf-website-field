@@ -10,7 +10,7 @@ License: GPLv2 or later
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html 
 
-== IMPORTANT ==
+## IMPORTANT ##
 This version is for ACF Version 5 (free and pro) ONLY!
 
 
